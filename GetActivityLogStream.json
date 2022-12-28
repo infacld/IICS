@@ -228,10 +228,16 @@
           "type" : "string"
         },
         "logEntryItemAttrs" : {
+          "type" : "array",
+          "items" : {
           "$ref" : "#/definitions/GetActivityLog##entries##logEntryItemAttrs"
+		  }
         },
         "sessionVariables" : {
+          "type" : "array",
+          "items" : {
           "$ref" : "#/definitions/GetActivityLog##entries##sessionVariables"
+		  }
         },
         "taskRuntimeInfo" : {
           "type" : "string"
