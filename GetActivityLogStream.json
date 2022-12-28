@@ -1,0 +1,353 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : null,
+    "version" : "1.0.0",
+    "title" : null,
+    "termsOfService" : null,
+    "contact" : null,
+    "license" : null
+  },
+  "host" : "emw1.dm-em.informaticacloud.com",
+  "basePath" : "/saas/api/v2",
+  "schemes" : [ "https" ],
+  "paths" : {
+    "/activity/activityLog" : {
+      "get" : {
+        "tags" : [ "GetActivityLog" ],
+        "summary" : null,
+        "description" : null,
+        "operationId" : "GetActivityLog",
+        "produces" : [ "application/json" ],
+        "consumes" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/GetActivityLog"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "GetActivityLog##entries##logEntryItemAttrs" : {
+      "properties" : {
+        "CONSUMED_COMPUTE_UNITS" : {
+          "type" : "string"
+        },
+        "ERROR_CODE" : {
+          "type" : "string"
+        },
+        "IS_SERVER_LESS" : {
+          "type" : "string"
+        },
+        "REQUESTED_COMPUTE_UNITS" : {
+          "type" : "string"
+        },
+        "SERVICE_TYPE" : {
+          "type" : "string"
+        },
+        "Session Log File Name" : {
+          "type" : "string"
+        }
+      }
+    },
+    "GetActivityLog##entries##sessionVariables" : {
+      "properties" : {
+        "$$p_ita_cod" : {
+          "type" : "string"
+        },
+        "$$P_Target_Table" : {
+          "type" : "string"
+        },
+        "$$P_Source_System" : {
+          "type" : "string"
+        },
+        "$$V_Mandt_List_Filter" : {
+          "type" : "string"
+        },
+        "$$p_stage" : {
+          "type" : "string"
+        },
+        "$$p_fnl_schema" : {
+          "type" : "string"
+        },
+        "$$p_src_slt_connection" : {
+          "type" : "string"
+        },
+        "$$p_azure_folder" : {
+          "type" : "string"
+        },
+        "$$P_Run_Reason" : {
+          "type" : "string"
+        },
+        "$$in_Pull_Time_Field_Name" : {
+          "type" : "string"
+        },
+        "$$in_P_Recover_To_Timestamp" : {
+          "type" : "string"
+        },
+        "$$V_Run_Type" : {
+          "type" : "string"
+        },
+        "$$P_Mandant_List" : {
+          "type" : "string"
+        },
+        "$$p_warehouse" : {
+          "type" : "string"
+        },
+        "$$p_db" : {
+          "type" : "string"
+        },
+        "$$p_schema_edw" : {
+          "type" : "string"
+        },
+        "$$p_tgt_connection" : {
+          "type" : "string"
+        },
+        "$$in_Pull_Time_Field_Format" : {
+          "type" : "string"
+        },
+        "$$in_P_Recover_From_Timestamp" : {
+          "type" : "string"
+        },
+        "$$P_Src_Schema" : {
+          "type" : "string"
+        },
+        "$$p_src_connection" : {
+          "type" : "string"
+        },
+        "$$in_P_Recovery_Clause" : {
+          "type" : "string"
+        },
+        "$$V_WORKFLOWSTARTTIME" : {
+          "type" : "string"
+        },
+        "$$p_tgt_connection_adl" : {
+          "type" : "string"
+        },
+        "$$V_Pull_Query_Filter" : {
+          "type" : "string"
+        }
+      }
+    },
+    "GetActivityLog##entries##transformationEntries" : {
+      "properties" : {
+        "@type" : {
+          "type" : "string"
+        },
+        "id" : {
+          "type" : "string"
+        },
+        "txName" : {
+          "type" : "string"
+        },
+        "txType" : {
+          "type" : "string"
+        },
+        "successRows" : {
+          "type" : "number"
+        },
+        "failedRows" : {
+          "type" : "number"
+        },
+        "txInstanceName" : {
+          "type" : "string"
+        }
+      }
+    },
+    "GetActivityLog##entries" : {
+      "properties" : {
+        "@type" : {
+          "type" : "string"
+        },
+        "id" : {
+          "type" : "string"
+        },
+        "type" : {
+          "type" : "string"
+        },
+        "objectName" : {
+          "type" : "string"
+        },
+        "runId" : {
+          "type" : "number"
+        },
+        "agentId" : {
+          "type" : "string"
+        },
+        "runtimeEnvironmentId" : {
+          "type" : "string"
+        },
+        "startTime" : {
+          "type" : "string"
+        },
+        "endTime" : {
+          "type" : "string"
+        },
+        "startTimeUtc" : {
+          "type" : "string"
+        },
+        "endTimeUtc" : {
+          "type" : "string"
+        },
+        "state" : {
+          "type" : "number"
+        },
+        "failedSourceRows" : {
+          "type" : "number"
+        },
+        "successSourceRows" : {
+          "type" : "number"
+        },
+        "failedTargetRows" : {
+          "type" : "number"
+        },
+        "successTargetRows" : {
+          "type" : "number"
+        },
+        "errorMsg" : {
+          "type" : "string"
+        },
+        "startedBy" : {
+          "type" : "string"
+        },
+        "runContextType" : {
+          "type" : "string"
+        },
+        "entries" : {
+          "type" : "string"
+        },
+        "subTaskEntries" : {
+          "type" : "string"
+        },
+        "logEntryItemAttrs" : {
+          "$ref" : "#/definitions/GetActivityLog##entries##logEntryItemAttrs"
+        },
+        "sessionVariables" : {
+          "$ref" : "#/definitions/GetActivityLog##entries##sessionVariables"
+        },
+        "taskRuntimeInfo" : {
+          "type" : "string"
+        },
+        "totalSuccessRows" : {
+          "type" : "number"
+        },
+        "totalFailedRows" : {
+          "type" : "number"
+        },
+        "stopOnError" : {
+          "type" : "boolean"
+        },
+        "hasStopOnErrorRecord" : {
+          "type" : "boolean"
+        },
+        "contextExternalId" : {
+          "type" : "string"
+        },
+        "transformationEntries" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/GetActivityLog##entries##transformationEntries"
+          }
+        }
+      }
+    },
+    "GetActivityLog" : {
+      "properties" : {
+        "@type" : {
+          "type" : "string"
+        },
+        "id" : {
+          "type" : "string"
+        },
+        "type" : {
+          "type" : "string"
+        },
+        "objectId" : {
+          "type" : "string"
+        },
+        "objectName" : {
+          "type" : "string"
+        },
+        "runId" : {
+          "type" : "number",
+          "format" : "int32"
+        },
+        "startTime" : {
+          "type" : "string"
+        },
+        "endTime" : {
+          "type" : "string"
+        },
+        "startTimeUtc" : {
+          "type" : "string"
+        },
+        "endTimeUtc" : {
+          "type" : "string"
+        },
+        "state" : {
+          "type" : "number",
+          "format" : "int32"
+        },
+        "failedSourceRows" : {
+          "type" : "number",
+          "format" : "int32"
+        },
+        "successSourceRows" : {
+          "type" : "number",
+          "format" : "int32"
+        },
+        "failedTargetRows" : {
+          "type" : "number",
+          "format" : "int32"
+        },
+        "successTargetRows" : {
+          "type" : "number",
+          "format" : "int32"
+        },
+        "startedBy" : {
+          "type" : "string"
+        },
+        "runContextType" : {
+          "type" : "string"
+        },
+        "entries" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/GetActivityLog##entries"
+          }
+        },
+        "totalSuccessRows" : {
+          "type" : "number",
+          "format" : "int32"
+        },
+        "totalFailedRows" : {
+          "type" : "number",
+          "format" : "int32"
+        },
+        "stopOnError" : {
+          "type" : "boolean"
+        },
+        "hasStopOnErrorRecord" : {
+          "type" : "boolean"
+        },
+        "parameterFileLocation" : {
+          "type" : "string"
+        },
+        "userSubstitutedParams" : {
+          "type" : "string"
+        },
+        "parentTaskFederatedId" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}
